@@ -1,0 +1,92 @@
+.main {
+  display: flex;
+  justify-content: center;
+  .content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border: 2px solid red;
+    .hero {
+      border: 1px solid blue;
+      p {
+        display: block;
+        margin-top: 5px;
+      }
+      .text1,
+      .text2 {
+        font-size: 70px;
+        font-weight: 700;
+      }
+      .text3,
+      .text4 {
+        font-size: 30px;
+      }
+      .text5 {
+        color: black;
+      }
+      .btnGroup {
+        margin-top: 10px;
+        // background-color: black;
+        display: flex;
+        // justify-content: space-between;
+        border: 2px solid red;
+      }
+    }
+    .mockups {
+      border: 2px solid red;
+    }
+    .phones {
+      // background-image: url("../../public/Mockups.png");
+      // background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      //   height: 60vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .content2 {
+    // border: 2px solid red;
+    padding: 80px 0;
+    .bgImage {
+      // z-index: 2;
+      border: 2px solid green;
+      background-image: url("../../public/bg.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 38vh;
+      width: 100%;
+    }
+    .features {
+      // z-index: 3;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      border: 2px solid red;
+      .personalized,
+      .gallary,
+      .MoodTracker {
+        text-align: center;
+        border: 2px solid blue;
+        // display: flex;
+        // justify-content: center;
+      }
+
+      .persTittle {
+        display: block;
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+  }
+}
