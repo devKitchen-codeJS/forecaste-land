@@ -5,11 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    border: 2px solid red;
+    // height: 500px;
+    // border: 2px solid red;
     .hero {
-      border: 1px solid blue;
-      p {
+      //   border: 1px solid blue;
+      //   display: block;
+      .text {
         display: block;
         margin-top: 5px;
       }
@@ -17,71 +18,72 @@
       .text2 {
         font-size: 70px;
         font-weight: 700;
+        color: #ffff;
       }
       .text3,
       .text4 {
         font-size: 30px;
       }
+
       .text5 {
         color: black;
       }
       .btnGroup {
         margin-top: 10px;
-        // background-color: black;
         display: flex;
-        // justify-content: space-between;
-        border: 2px solid red;
+        .btn_try_now {
+          height: 100%;
+          background-color: black;
+        }
+        .btn_free {
+          background-color: #f5b747;
+          color: black;
+        }
       }
     }
     .mockups {
-      border: 2px solid red;
-    }
-    .phones {
-      // background-image: url("../../public/Mockups.png");
-      // background-size: cover;
-      // background-position: center;
-      // background-repeat: no-repeat;
-      //   height: 60vh;
-      width: 100%;
-      object-fit: cover;
+      // display: block;
+      //   border: 2px solid blue;
+      .phones {
+        // position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
   .content2 {
-    // border: 2px solid red;
-    padding: 80px 0;
+    margin-top: 100px;
     .bgImage {
-      // z-index: 2;
-      border: 2px solid green;
       background-image: url("../../public/bg.png");
-      background-size: contain;
-      background-position: center;
+      background-size: cover;
       background-repeat: no-repeat;
-      height: 38vh;
-      width: 100%;
+      height: 200px;
     }
     .features {
-      // z-index: 3;
-      margin-top: 200px;
       display: flex;
-      justify-content: center;
-      border: 2px solid red;
+      justify-content: space-around;
       .personalized,
       .gallary,
       .MoodTracker {
-        text-align: center;
-        border: 2px solid blue;
-        // display: flex;
-        // justify-content: center;
+        margin-top: 80px;
+        color: #ffff;
       }
-
       .persTittle {
-        display: block;
-
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
         span {
           display: block;
         }
       }
     }
+  }
+  .content3{
+    .nextsection {
+        background: linear-gradient(#e0a12e, var(--background-end-rgb));
+        height: 100vh;
+      }
   }
 }
 

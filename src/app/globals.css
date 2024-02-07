@@ -7,7 +7,7 @@
 
   --foreground-rgb: #d2982d;
   --background-start-rgb: #d2982d;
-  --background-end-rgb: 210, 152, 45;
+  --background-end-rgb: #d2982d;
 
   /* --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -41,7 +41,7 @@
 }
 * {
   box-sizing: border-box;
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
 }
 html,
@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 body {
-   background:  rgb(var(--background-end-rgb)) 
+   background:  var(--background-end-rgb);
 }
 /* 
  @media (prefers-color-scheme: dark) {
