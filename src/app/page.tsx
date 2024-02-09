@@ -1,33 +1,35 @@
 import styles from "./page.module.scss";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import phones from "../../public/Mockups.png";
-import gallary from "../../public/gallary.png"
+import phones from "../../public/images/Mockups.png";
+import gallary from "../../public/images/gallary.png";
+import iphone_plan from "../../public/images/phone_mockup.png"
+import theme from "./theme";
 export default function Home() {
   return (
     <Box>
       <Grid container className={styles.main}>
         <Grid item container className={styles.content1} xs={12}>
-          <Grid item xl={5} md={5} xs={11} className={styles.hero}>
-            <Typography className={`${styles.text} ${styles.text1}`}>
-              Your Live{" "}
+          <Grid item  container xl={5} md={5} xs={11} className={styles.hero}>
+            <Typography className={styles.text1}>
+              Your Live
             </Typography>
-            <Typography className={`${styles.text} ${styles.text2}`}>
+            <Typography className={styles.text2}>
               Forecaster
             </Typography>
-            <Typography className={`${styles.text} ${styles.text3}`}>
+            <Typography className={styles.text3}>
               Together We Forecast: Building Dreams,
             </Typography>
-            <Typography className={`${styles.text} ${styles.text4}`}>
+            <Typography className={styles.text4}>
               One Day at a Time!
             </Typography>
-            <Typography className={`${styles.text} ${styles.text5}`}>
+            <Typography className={styles.text5}>
               1million People like you have purchased this product!
             </Typography>
 
             <Grid item container xs={12} className={styles.btnGroup}>
               <Grid item lg={2} sm={12}>
-                <Button variant='contained' className={styles.btn_try_now}>
+                <Button  variant='contained' className={styles.btn_try_now}>
                   TRY NOW
                 </Button>
               </Grid>
@@ -43,53 +45,60 @@ export default function Home() {
           </Grid>
         </Grid>
 
-        <Grid item className={styles.content2} xs={12}>
-          <div className={styles.bgImage}>
-            <Grid item xs={12} className={styles.features}>
+        <Grid item container  className={styles.content2} xs={12}>
+          <Box  className={styles.bgImage}>
+            <Grid item container xs={12} className={styles.features}>
               <Grid item xs={3} className={styles.personalized}>
-                <div className={styles.persTittle}>
-                  <div className={styles.persIcon} />
+                <Box className={styles.persTittle}>
+                  <Box className={styles.persIcon}/>
                   <img src={gallary.src} className={styles.gallary_img} />
-                  <h3>Personalized</h3>
-                </div>
-                <span>
+                  <Typography>Personalized</Typography>
+                </Box>
+                <Typography className={styles.text_features}>
                   A personalized weather report that shows the best time and
                   place for couples to enjoy outdoor activities based on their
                   preferences and location.
-                </span>
+                </Typography>
               </Grid>
               <Grid item xs={3} className={styles.gallary}>
                 <div className={styles.persTittle}>
                   <div className={styles.persIcon} />
                   <img src={gallary.src} className={styles.gallary_img} />
-
-                  <h3>Gallary</h3>
+                  <Typography>Gallary</Typography>
                 </div>
-                <span>
+                <Typography className={styles.text_features}>
                   A personalized weather report that shows the best time and
                   place for couples to enjoy outdoor activities based on their
                   preferences and location.
-                </span>
+                </Typography>
               </Grid>
-              <Grid item xs={3} className={styles.MoodTracker}>
+              <Grid item xs={3} className={styles.mood_tracker}>
                 <div className={styles.persTittle}>
                   <div className={styles.persIcon} />
                   <img src={gallary.src} className={styles.gallary_img} />
 
-                  <h3>MoodTracker</h3>
+                  <Typography>MoodTracker</Typography>
                 </div>
-                <span>
+                <Typography className={styles.text_features}>
                   A personalized weather report that shows the best time and
                   place for couples to enjoy outdoor activities based on their
                   preferences and location.
-                </span>
+                </Typography>
               </Grid>
             </Grid>
-          </div>
+          </Box>
         </Grid>
 
-        <Grid item className={styles.content3} xs={12}>
-          <div className={styles.nextsection}>Hello</div>
+        <Grid item container className={styles.content3} xs={12}>
+          <Grid item className={styles.iphone_plan} xs={5} >
+            <img src={iphone_plan.src} className={styles.iphone}/>
+          </Grid>
+          <Grid item className={styles.text_block} xs={5}>
+            <Typography>Plan Your Outdoor</Typography>
+            <Typography>Activities with Ease</Typography>
+            <Typography>Get notified before rain stops. Plan your outdoor activities</Typography>
+
+          </Grid>
         </Grid>
       </Grid>
     </Box>

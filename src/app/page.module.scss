@@ -5,15 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 500px;
     // border: 2px solid red;
     .hero {
-      //   border: 1px solid blue;
-      //   display: block;
-      .text {
-        display: block;
-        margin-top: 5px;
-      }
+      display: block;
+      margin-top: 5px;
       .text1,
       .text2 {
         font-size: 70px;
@@ -32,6 +27,7 @@
         margin-top: 10px;
         display: flex;
         .btn_try_now {
+          color: #ffff;
           height: 100%;
           background-color: black;
         }
@@ -54,36 +50,51 @@
   }
   .content2 {
     margin-top: 100px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
     .bgImage {
-      background-image: url("../../public/bg.png");
+      background-image: url("../../public/images/bg.png");
       background-size: cover;
       background-repeat: no-repeat;
       height: 200px;
+      //   width: 100%;
+      //   border:2px solid red;
     }
     .features {
+      border: 2px solid black;
       display: flex;
       justify-content: space-around;
+
       .personalized,
       .gallary,
-      .MoodTracker {
-        margin-top: 80px;
+      .mood_tracker {
+        border: 1px dashed aliceblue;
+        margin-top: 60px;
         color: #ffff;
       }
       .persTittle {
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
-        span {
-          display: block;
-        }
+        // margin-bottom: 10px;
+      }
+      .text_features {
+        // display: block;
       }
     }
   }
-  .content3{
-    .nextsection {
-        background: linear-gradient(#e0a12e, var(--background-end-rgb));
-        height: 100vh;
-      }
+  .content3 {
+    border: 2px solid red;
+    background: linear-gradient(#e0a12e, var(--background-end-rgb));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    .iphone_plan {
+      border: 2px solid blue;
+    }
+    .text_block {
+      border: 2px solid green;
+    }
   }
 }
 

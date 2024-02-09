@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 // import { ThemeProvider } from "@emotion/react";
-// import theme from "./theme"
+import theme from "./theme"
+import { ThemeProvider } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,12 +22,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       {/* <body className={inter.className}><ThemeProvider theme={}>{children}</ThemeProvider></body> */}
-      {/* <ThemeProvider theme={theme}> */}
+      <ThemeProvider theme={theme}>
       <body className={inter.className}  suppressHydrationWarning={true}>
         <Header />
         {children}
       </body>
-      {/* </ThemeProvider> */}
+      </ThemeProvider>
     </html>
   );
 }
