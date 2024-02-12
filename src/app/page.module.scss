@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   .content1 {
+    // border: 2px solid red;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 2px solid red;
     .hero {
       display: block;
       margin-top: 5px;
@@ -38,38 +39,35 @@
       }
     }
     .mockups {
-      // display: block;
-      //   border: 2px solid blue;
       .phones {
-        // position: absolute;
         height: 100%;
         width: 100%;
         object-fit: cover;
       }
     }
   }
+
   .content2 {
     margin-top: 100px;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     display: flex;
     justify-content: center;
-    .bgImage {
-      background-image: url("../../public/images/bg.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 200px;
-      //   width: 100%;
-      //   border:2px solid red;
-    }
+    // .bgImage {
+    background-image: url("../../public/images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    // }
     .features {
-      border: 2px solid black;
+      // border: 2px solid black;
       display: flex;
       justify-content: space-around;
 
       .personalized,
       .gallary,
       .mood_tracker {
-        border: 1px dashed aliceblue;
+        // border: 1px dashed aliceblue;
         margin-top: 60px;
         color: #ffff;
       }
@@ -83,17 +81,35 @@
       }
     }
   }
+
   .content3 {
-    border: 2px solid red;
+    // border: 2px solid red;
+    padding-top: 100px;
     background: linear-gradient(#e0a12e, var(--background-end-rgb));
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
+
     .iphone_plan {
-      border: 2px solid blue;
+      position: relative;
+      text-align: end;
+    }
+
+    .iphone {
+      z-index: 1;
+    }
+    .line {
+      z-index: 2;
+      margin-bottom: 297px;
+      margin-left: -85px;
     }
     .text_block {
-      border: 2px solid green;
+      margin-top: 56px;
+      // border: 2px solid green;
+      .tittle {
+        color: white;
+        font-weight: 700;
+      }
     }
   }
 }
