@@ -21,6 +21,8 @@ const __dark__color_btn = "#";
 const __dark__color_text = "#";
 const __dark__color_card = "#";
 
+const __check_color = "#dddddd"
+
 
 // export const themeOptions: R
 const theme = createTheme({
@@ -35,6 +37,10 @@ const theme = createTheme({
       dark: "#ba000d",
       contrastText: "#000",
     },
+    info:{
+      main:__check_color,
+    }
+  
   },
 });
 

@@ -1,11 +1,22 @@
 import styles from "./page.module.scss";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Grid,
+  Radio,
+  RadioGroup,
+  Typography,
+} from "@mui/material";
 import Button from "@mui/material/Button";
 import phones from "../../public/images/Mockups.png";
 import gallary from "../../public/images/gallary.png";
 import iphone_plan from "../../public/images/phone_mockup.png";
-import line2 from "../../public/images/Line 2.png"
+import line2 from "../../public/images/Line 2.png";
 import theme from "./theme";
+import CustomList from "@/components/list";
 
 export default function Home() {
   return (
@@ -89,13 +100,18 @@ export default function Home() {
         <Grid item container className={styles.content3} xs={12}>
           <Grid item className={styles.iphone_plan} xs={5}>
             <img src={iphone_plan.src} className={styles.iphone} />
-            <img src={line2.src} className={styles.line}/>
+            <img src={line2.src} className={styles.line} />
           </Grid>
           <Grid item className={styles.text_block} xs={5}>
-            <Typography variant='h2' className={styles.tittle}>Plan Your Outdoor</Typography>
-            <Typography variant='h2' className={styles.tittle}>Activities with Ease</Typography>
+            <Typography variant='h2' className={styles.tittle}>
+              Plan Your Outdoor
+            </Typography>
+            <Typography variant='h2' className={styles.tittle}>
+              Activities with Ease
+            </Typography>
             <Typography variant='h4'>Get notified before rain stops</Typography>
             <Typography variant='h4'> Plan your outdoor activities</Typography>
+            <CustomList />
           </Grid>
         </Grid>
       </Grid>
