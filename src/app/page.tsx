@@ -2,21 +2,27 @@ import styles from "./page.module.scss";
 import {
   Box,
   Container,
+  Divider,
   FormControl,
   FormControlLabel,
   FormLabel,
   Grid,
   Radio,
   RadioGroup,
+  ThemeProvider,
   Typography,
+  createTheme,
 } from "@mui/material";
 import Button from "@mui/material/Button";
 import phones from "../../public/images/Mockups.png";
 import gallary from "../../public/images/gallary.png";
 import iphone_plan from "../../public/images/phone_mockup.png";
 import line2 from "../../public/images/Line 2.png";
+import sun from "../../public/images/sun.png";
 import theme from "./theme";
 import CustomList from "@/components/list";
+import CustomSlider from "@/components/slider/slider";
+import Player from "@/components/spotify/player";
 
 export default function Home() {
   return (
@@ -112,6 +118,51 @@ export default function Home() {
             <Typography variant='h4'>Get notified before rain stops</Typography>
             <Typography variant='h4'> Plan your outdoor activities</Typography>
             <CustomList />
+          </Grid>
+        </Grid>
+
+        <Grid item container className={styles.content4} xs={12}>
+          <Grid item className={styles.sunImg}>
+            <img src={sun.src} className={styles.sun_img} />
+          </Grid>
+          <Grid item className={styles.sliderContainer}>
+            <CustomSlider />
+            <CustomSlider />
+          </Grid>
+        </Grid>
+        <Grid item container className={styles.content5} xs={12}>
+          <Grid item className={styles.tittle5} xs={10}>
+            <Typography variant='h3' fontWeight={700}>
+              The Weather App That Brings{" "}
+            </Typography>
+            <Typography variant='h3' fontWeight={700}>
+              {" "}
+              You Wonder
+            </Typography>
+            <Typography variant='h5' className={styles.sub_tittle5}>
+              We care about your happiness and well-being, no matter the weather
+            </Typography>
+          </Grid>
+          <Grid item className={styles.fq_list}>
+            <Typography variant='h5' className={styles.fq_text}>
+              How can I customize the Juniper app to suit my needs?
+            </Typography>
+            <Divider />
+
+            <Typography variant='h5' className={styles.fq_text}>
+              How can I customize the Juniper app to suit my needs?
+            </Typography>
+            <Divider />
+
+            <Typography variant='h5' className={styles.fq_text}>
+              How can I customize the Juniper app to suit my needs?
+            </Typography>
+            <Divider />
+
+            <Typography variant='h5' className={styles.fq_text}>
+              How can I customize the Juniper app to suit my needs?
+            </Typography>
+            <Divider className={styles.divider1} />
           </Grid>
         </Grid>
       </Grid>

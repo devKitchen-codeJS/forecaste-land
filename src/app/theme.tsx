@@ -1,4 +1,4 @@
-import { ThemeOptions, createTheme } from "@mui/material";
+import { PaletteColorOptions, ThemeOptions, createTheme } from "@mui/material";
 
 export const baseOptions: ThemeOptions = {
   typography: {
@@ -21,10 +21,10 @@ const __dark__color_btn = "#";
 const __dark__color_text = "#";
 const __dark__color_card = "#";
 
-const __check_color = "#dddddd"
-
+const __check_color = "#dddddd";
 
 // export const themeOptions: R
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -37,10 +37,9 @@ const theme = createTheme({
       dark: "#ba000d",
       contrastText: "#000",
     },
-    info:{
-      main:__check_color,
-    }
-  
+    info: {
+      main: __check_color,
+    },
   },
 });
 

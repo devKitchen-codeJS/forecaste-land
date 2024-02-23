@@ -17,12 +17,17 @@
     "@mui/material-nextjs": "^5.15.0",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-slick": "^0.30.1",
+    "react-spotify-player": "^1.0.4",
+    "react-timer-hook": "^3.0.7",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "sass": "^1.69.7",

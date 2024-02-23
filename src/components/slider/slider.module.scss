@@ -1,0 +1,36 @@
+.wrapper {
+  // border: 2px solid blue;
+  padding: 100px;
+  .slider {
+    // border: 2px solid black;
+    color: white;
+    width: 500px;
+    height: 200px;
+    border-radius: 7px;
+    background-color: #403b45;
+    .slide1 {
+      padding: 20px;
+    }
+    .text {
+      //   height: 50px;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .customer {
+      display: flex;
+      align-items: center;
+      .customer_name {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    // .slick-slider {
+    //   button.slick-next:before {
+    //     content: url("../../../public/images/arrowR.png");
+    //   }
+    //   button.slick-prev:before {
+    //     content: url("../../../public/images/aroowL.png");
+    //   }
+    // }
+  }
+}

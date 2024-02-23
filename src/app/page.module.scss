@@ -16,7 +16,7 @@
         font-weight: 700;
         color: #ffff;
       }
-      .text3,f
+      .text3,
       .text4 {
         font-size: 30px;
       }
@@ -52,11 +52,10 @@
     // border: 2px solid blue;
     display: flex;
     justify-content: center;
-    // .bgImage {
     background-image: url("../../public/images/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    // height: 200px;
 
     // }
     .features {
@@ -86,7 +85,6 @@
     // border: 2px solid red;
     padding-top: 100px;
     background: linear-gradient(#e0a12e, var(--background-end-rgb));
-    height: 80vh;
     display: flex;
     justify-content: center;
 
@@ -105,17 +103,67 @@
     }
     .text_block {
       margin-top: 56px;
-      border: 2px solid green;
       .tittle {
         color: white;
         font-weight: 700;
       }
     }
   }
+
+  .content4 {
+    display: block !important;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 570px;
+    background-image: url("../../public/images/icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .sliderContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+    .sunImg {
+      display: flex;
+      justify-content: end;
+      align-items: start;
+      height: 200px;
+      margin-top: -100px;
+    }
+  }
+  .content5 {
+    height: 500px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    .tittle5 {
+      text-align: center;
+      border: 2px solid black;
+      color: white;
+      // font-weight: 800;
+      .sub_tittle5 {
+        color: black;
+        font-size: 20px;
+      }
+    }
+    .fq_list {
+      color: white;
+      .fq_text {
+        margin-top: 20px;
+      }
+      // .divider1 {
+      //   position: relative;
+      //   width: 100%;
+      //   color: white;
+      // }
+    }
+  }
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-  }
-}
+// @media (hover: hover) and (pointer: fine) {
+//   .card:hover {
+//   }
+// }
