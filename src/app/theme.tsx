@@ -28,7 +28,7 @@ const __check_color = "#dddddd";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#D2982D",
+      main: __color_primary,
       dark: "#ba000d",
     },
     secondary: {
@@ -38,7 +38,7 @@ const theme = createTheme({
       contrastText: "#000",
     },
     info: {
-      main: __check_color,
+      main: __color_neutral,
     },
   },
 });

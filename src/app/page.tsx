@@ -23,6 +23,8 @@ import theme from "./theme";
 import CustomList from "@/components/list";
 import CustomSlider from "@/components/slider/slider";
 import Player from "@/components/spotify/player";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import MyDivider from "@/components/customDivider";
 
 export default function Home() {
   return (
@@ -136,33 +138,58 @@ export default function Home() {
               The Weather App That Brings{" "}
             </Typography>
             <Typography variant='h3' fontWeight={700}>
-              {" "}
               You Wonder
             </Typography>
             <Typography variant='h5' className={styles.sub_tittle5}>
               We care about your happiness and well-being, no matter the weather
             </Typography>
           </Grid>
-          <Grid item className={styles.fq_list}>
-            <Typography variant='h5' className={styles.fq_text}>
-              How can I customize the Juniper app to suit my needs?
+          <Grid item className={styles.fq_list} xs={5}>
+            <div className={styles.menu1}>
+              <Typography variant='h5' className={styles.fq_text}>
+                How can I customize the Juniper app to suit my needs?
+              </Typography>
+              <KeyboardArrowRightIcon />
+            </div>
+            {/* <div className={styles.divider} /> */}
+            <MyDivider />
+            <div className={styles.menu1}>
+              <Typography variant='h5' className={styles.fq_text}>
+                How can I share my weather updates with my partner?{" "}
+              </Typography>
+              <KeyboardArrowRightIcon />
+            </div>
+            <MyDivider />
+            <div className={styles.menu1}>
+              <Typography variant='h5' className={styles.fq_text}>
+                How long is the free trial for the Juniper app?{" "}
+              </Typography>
+              <KeyboardArrowRightIcon />
+            </div>
+            <MyDivider />
+            <div className={styles.menu1}>
+              <Typography variant='h5' className={styles.fq_text}>
+                What happens after the free trial ends?{" "}
+              </Typography>
+              <KeyboardArrowRightIcon />
+            </div>
+            <MyDivider />
+          </Grid>
+        </Grid>
+        <Grid item container className={styles.content6}>
+          <Grid className={styles.text_container} item xs={5}>
+            <Typography className={styles.text6}>
+              Experience the weather like never before
             </Typography>
-            <Divider />
-
-            <Typography variant='h5' className={styles.fq_text}>
-              How can I customize the Juniper app to suit my needs?
+            <Typography className={styles.text7}>
+              The Only Weather App You Need to Stay Connected with Nature and
+              Each Other
             </Typography>
-            <Divider />
-
-            <Typography variant='h5' className={styles.fq_text}>
-              How can I customize the Juniper app to suit my needs?
-            </Typography>
-            <Divider />
-
-            <Typography variant='h5' className={styles.fq_text}>
-              How can I customize the Juniper app to suit my needs?
-            </Typography>
-            <Divider className={styles.divider1} />
+          </Grid>
+          <Grid className={styles.btn_row} xs={12}>
+            <Button variant='contained' className={styles.btn_download_now}>
+              DOWNLOAD NOW
+            </Button>
           </Grid>
         </Grid>
       </Grid>

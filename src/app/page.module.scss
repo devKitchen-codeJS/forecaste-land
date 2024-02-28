@@ -51,7 +51,7 @@
     margin-top: 100px;
     // border: 2px solid blue;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     background-image: url("../../public/images/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,17 +130,17 @@
       justify-content: end;
       align-items: start;
       height: 200px;
-      margin-top: -100px;
+      margin-top: -200px;
     }
   }
   .content5 {
     height: 500px;
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: center;
     .tittle5 {
       text-align: center;
-      border: 2px solid black;
+      // border: 2px solid black;
       color: white;
       // font-weight: 800;
       .sub_tittle5 {
@@ -149,15 +149,70 @@
       }
     }
     .fq_list {
+      // border: 2px solid red;
       color: white;
+      .divider {
+        opacity: 20%;
+        height: 2px;
+        background-color: white;
+        width: 100%;
+      }
+      .menu1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
       .fq_text {
+        font-size: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
       }
       // .divider1 {
       //   position: relative;
       //   width: 100%;
       //   color: white;
       // }
+    }
+  }
+
+  .content6 {
+    // height: 200px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    // background: linear-gradient(#e0a12e, var(--background-end-rgb));
+    display: flex;
+    justify-content: center;
+    .text_container {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      .text6 {
+        font-size: 20px;
+        color: #f2ba53;
+      }
+      .text7 {
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+      }
+    }
+    .btn_row {
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      .btn_download_now {
+        background-color: black;
+        color: white;
+        transform: scale(1);
+        transition: transform 0.7s ease; 
+      }
+      :hover {
+        // height: 50px;
+        // width: 200px;
+        transform: scale(1.1);
+        background-color: rgb(49, 48, 48);
+        transition: 0.5s;
+      }
     }
   }
 }

@@ -1,0 +1,73 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  .forcaste_icons {
+    border: 2px solid green;
+
+    background-image: url("../../../public/images/forcaste_icons.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    // margin-bottom: 100px;
+    height: 100px;
+    width: 100%;
+  }
+  .footer {
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    background-image: url("../../../public/images/bg_wave2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 500px;
+    .content1 {
+      // padding-bottom: 100px;
+      margin-top: 100px;
+
+      .icon_wrapper {
+        .icon_container {
+          display: flex;
+          height: 20px;
+          align-items: center;
+          // border: 2px solid red;
+        }
+
+        .brand_icon {
+          margin-right: 10px;
+        }
+      }
+      .text_container1 {
+        .text_wrapper {
+          cursor: pointer;
+          transform: scale(1);
+          transition: transform 0.7s ease;
+        }
+        .text_wrapper:hover {
+          transition: 0.5s;
+          transform: scale(1.1);
+        }
+        .text1 {
+          font-size: 20px;
+          margin-bottom: 20px;
+          color: white;
+          transform: none;
+        }
+
+        .text2 {
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: var(--footer-text-rgb);
+          transform: scale(1);
+          transition: transform 0.7s ease;
+        }
+        .text2:hover {
+          transition: 0.5s;
+          transform: scale(1.1);
+          color: white;
+        }
+      }
+    }
+  }
+}

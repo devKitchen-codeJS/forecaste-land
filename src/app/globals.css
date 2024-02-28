@@ -8,6 +8,8 @@
   --foreground-rgb: #d2982d;
   --background-start-rgb: #d2982d;
   --background-end-rgb: #d2982d;
+  --footer-text-rgb: #a67824;
+
 
   /* --primary-glow: conic-gradient(
     from 180deg at 50% 50%,

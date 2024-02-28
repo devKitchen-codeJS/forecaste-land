@@ -6,6 +6,7 @@ import Header from "@/components/header";
 // import { ThemeProvider } from "@emotion/react";
 import theme from "./theme"
 import { ThemeProvider } from "@mui/material";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      {/* <body className={inter.className}><ThemeProvider theme={}>{children}</ThemeProvider></body> */}
       <ThemeProvider theme={theme}>
       <body className={inter.className}  suppressHydrationWarning={true}>
         <Header />
         {children}
+        <Footer/>
       </body>
       </ThemeProvider>
     </html>
