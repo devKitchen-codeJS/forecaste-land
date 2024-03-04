@@ -1,13 +1,14 @@
 .main {
   display: flex;
   justify-content: center;
+  // width: 100%;
   .content1 {
-    // border: 2px solid red;
-
     display: flex;
     justify-content: center;
     align-items: center;
     .hero {
+      // border: 2px solid red;
+
       display: block;
       margin-top: 5px;
       .text1,
@@ -25,6 +26,8 @@
         color: black;
       }
       .btnGroup {
+        display: flex;
+        // justify-content: space-between;
         margin-top: 10px;
         display: flex;
         .btn_try_now {
@@ -38,11 +41,17 @@
         }
       }
     }
+    -webkit-animation: ;
     .mockups {
       .phones {
-        height: 100%;
+        // height: min-content;
+        // width: min-content;
+        // object-fit: cover;
+        background-image: url("../../public/images/Mockups.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
-        object-fit: cover;
+        height: 470px;
       }
     }
   }
@@ -51,7 +60,7 @@
     margin-top: 100px;
     // border: 2px solid blue;
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     background-image: url("../../public/images/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +70,7 @@
     .features {
       // border: 2px solid black;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
 
       .personalized,
       .gallary,
@@ -204,7 +213,7 @@
         background-color: black;
         color: white;
         transform: scale(1);
-        transition: transform 0.7s ease; 
+        transition: transform 0.7s ease;
       }
       :hover {
         // height: 50px;

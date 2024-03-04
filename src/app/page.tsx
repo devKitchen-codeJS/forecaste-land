@@ -1,28 +1,13 @@
 import styles from "./page.module.scss";
-import {
-  Box,
-  Container,
-  Divider,
-  FormControl,
-  FormControlLabel,
-  FormLabel,
-  Grid,
-  Radio,
-  RadioGroup,
-  ThemeProvider,
-  Typography,
-  createTheme,
-} from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import phones from "../../public/images/Mockups.png";
 import gallary from "../../public/images/gallary.png";
 import iphone_plan from "../../public/images/phone_mockup.png";
 import line2 from "../../public/images/Line 2.png";
 import sun from "../../public/images/sun.png";
-import theme from "./theme";
 import CustomList from "@/components/list";
 import CustomSlider from "@/components/slider/slider";
-import Player from "@/components/spotify/player";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import MyDivider from "@/components/customDivider";
 
@@ -31,7 +16,7 @@ export default function Home() {
     <Box>
       <Grid container className={styles.main} xs={12}>
         <Grid item container className={styles.content1} xs={12}>
-          <Grid item container xl={5} md={5} xs={11} className={styles.hero}>
+          <Grid item container xs={5} className={styles.hero}>
             <Typography className={styles.text1}>Your Live</Typography>
             <Typography className={styles.text2}>Forecaster</Typography>
             <Typography className={styles.text3}>
@@ -43,12 +28,12 @@ export default function Home() {
             </Typography>
 
             <Grid item container xs={12} className={styles.btnGroup}>
-              <Grid item lg={2} sm={12}>
+              <Grid item>
                 <Button variant='contained' className={styles.btn_try_now}>
                   TRY NOW
                 </Button>
               </Grid>
-              <Grid item lg={10} sm={12}>
+              <Grid item>
                 <Button variant='contained' className={styles.btn_free}>
                   FREE TILL 15JUN2023
                 </Button>
@@ -56,14 +41,13 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          <Grid item xl={5} md={5} xs={11} className={styles.mockups}>
-            <img src={phones.src} className={styles.phones} />
+          <Grid item xs={5} className={styles.mockups}>
+            <div className={styles.phones} />
           </Grid>
         </Grid>
 
         <Grid item container className={styles.content2} xs={12}>
-          {/* <Box  className={styles.bgImage}> */}
-          <Grid item container xs={11} className={styles.features}>
+          <Grid item container xs={10} className={styles.features}>
             <Grid item xs={3} className={styles.personalized}>
               <Box className={styles.persTittle}>
                 <Box className={styles.persIcon} />
@@ -76,6 +60,7 @@ export default function Home() {
                 preferences and location.
               </Typography>
             </Grid>
+
             <Grid item xs={3} className={styles.gallary}>
               <div className={styles.persTittle}>
                 <div className={styles.persIcon} />
@@ -88,6 +73,7 @@ export default function Home() {
                 preferences and location.
               </Typography>
             </Grid>
+
             <Grid item xs={3} className={styles.mood_tracker}>
               <div className={styles.persTittle}>
                 <div className={styles.persIcon} />
