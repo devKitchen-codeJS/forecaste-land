@@ -77,14 +77,14 @@
       }
       .getnow_row {
         margin-top: 50px;
-        margin-bottom: 200px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         width: 100%;
         color: white;
         .juniper {
           transform: scale(1);
-          transition:  0.7s ease;
+          transition: 0.7s ease;
           text-transform: uppercase;
           color: white;
           font-size: 30px;
@@ -105,7 +105,7 @@
           //     0 0 70px #ff00de,
           //     0 0 80px #ff00de,
           //     0 0 100px #ff00de,
-          //     0 0 150px #ff00de;  
+          //     0 0 150px #ff00de;
           // text-decoration: none;
         }
         .btn_getnow {

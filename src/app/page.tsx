@@ -16,7 +16,7 @@ export default function Home() {
     <Box>
       <Grid container className={styles.main} xs={12}>
         <Grid item container className={styles.content1} xs={12}>
-          <Grid item container xs={5} className={styles.hero}>
+          <Grid item container xl={5} lg={4} md={4} className={styles.hero}>
             <Typography className={styles.text1}>Your Live</Typography>
             <Typography className={styles.text2}>Forecaster</Typography>
             <Typography className={styles.text3}>
@@ -41,7 +41,7 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          <Grid item xs={5} className={styles.mockups}>
+          <Grid item xl={5} lg={4} md={6} className={styles.mockups}>
             <div className={styles.phones} />
           </Grid>
         </Grid>
@@ -77,7 +77,7 @@ export default function Home() {
             <Grid item xs={3} className={styles.mood_tracker}>
               <div className={styles.persTittle}>
                 <div className={styles.persIcon} />
-                <img src={gallary.src} className={styles.gallary_img} />
+                <img src={gallary.src} Ё className={styles.gallary_img} />
 
                 <Typography>MoodTracker</Typography>
               </div>
