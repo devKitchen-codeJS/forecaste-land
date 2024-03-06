@@ -1,227 +1,227 @@
-.main {
+.content1 {
   display: flex;
   justify-content: center;
-  // width: 100%;
-  .content1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .hero {
-      border: 2px solid red;
+  align-items: center;
+  // position: absolute;
 
-      display: block;
-      margin-top: 5px;
-      .text1,
-      .text2 {
-        font-size: 70px;
-        font-weight: 700;
-        color: #ffff;
-      }
-      .text3,
-      .text4 {
-        font-size: 30px;
-      }
-
-      .text5 {
-        color: black;
-      }
-      .btnGroup {
-        display: flex;
-        // justify-content: space-between;
-        margin-top: 10px;
-        display: flex;
-        .btn_try_now {
-          color: #ffff;
-          height: 100%;
-          background-color: black;
-        }
-        .btn_free {
-          background-color: #f5b747;
-          color: black;
-        }
-      }
+  .hero {
+    display: block;
+    margin-top: 5px;
+    .text1,
+    .text2 {
+      font-size: 70px;
+      font-weight: 700;
+      color: #ffff;
     }
-    .mockups {
-      border: 2px solid blue;
-      .phones {
-        // height: min-content;
-        // width: min-content;
-        // object-fit: cover;
-        background-image: url("../../public/images/Mockups.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 470px;
+    .text3,
+    .text4 {
+      font-size: 30px;
+    }
+
+    .text5 {
+      color: black;
+    }
+    .btnGroup {
+      display: flex;
+      // justify-content: space-between;
+      margin-top: 10px;
+      display: flex;
+      .btn_try_now {
+        color: #ffff;
+        height: 100%;
+        background-color: black;
+      }
+      .btn_free {
+        background-color: #f5b747;
+        color: black;
       }
     }
   }
+}
 
-  .content2 {
-    margin-top: 100px;
-    // border: 2px solid blue;
+.content2 {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  .bg_img {
+    height: 210px;
+    // position: absolute;
+    width: calc(100% + 600px);
+    margin-left: -300px;
+    margin-right: -300px;
+    z-index: 1;
+  }
+
+  .features {
+    margin-top: -220px;
+    z-index: 2;
     display: flex;
-    justify-content: center;
-    background-image: url("../../public/images/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    // height: 200px;
+    justify-content: space-between;
 
-    // }
-    .features {
-      // border: 2px solid black;
+    .personalized,
+    .gallary,
+    .mood_tracker {
+      margin-top: 60px;
+      color: #ffff;
+    }
+    .persTittle {
+      display: flex;
+      align-items: center;
+      // margin-bottom: 10px;
+    }
+    .text_features {
+      // display: block;
+    }
+  }
+}
+
+.content3 {
+  width: calc(100% + 600px);
+  margin-left: -300px;
+  // position: absolute;
+  padding-top: 100px;
+  background: linear-gradient(#e0a12e, var(--background-end-rgb));
+  display: flex;
+  justify-content: center;
+
+  .iphone_plan {
+    position: relative;
+    text-align: end;
+  }
+
+  .iphone {
+    z-index: 1;
+  }
+  .line {
+    z-index: 2;
+    margin-bottom: 297px;
+    margin-left: -85px;
+  }
+  .text_block {
+    margin-top: 56px;
+    .tittle {
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
+.content4 {
+  // display: block !important;
+  // border: 2px solid red;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  // height: 570px;
+  // position: relative;
+  .bg_box {
+    // border: 2px solid black;
+
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+    .bg2_img {
+      margin-left: -300px;
+      margin-right: -300px;
+      height: 570px;
+    }
+    .sun_img {
+      // justify-content: end;
+      position: absolute;
+      margin-right: -300px;
+      margin-top: -150px;
+      height: 300px;
+    }
+  }
+
+  .sliderContainer {
+    margin-top: -500px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.content5 {
+  height: 500px;
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  .tittle5 {
+    text-align: center;
+    // border: 2px solid black;
+    color: white;
+    // font-weight: 800;
+    .sub_tittle5 {
+      color: black;
+      font-size: 20px;
+    }
+  }
+  .fq_list {
+    // border: 2px solid red;
+    color: white;
+    .divider {
+      opacity: 20%;
+      height: 2px;
+      background-color: white;
+      width: 100%;
+    }
+    .menu1 {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
+    }
+    .fq_text {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    // .divider1 {
+    //   position: relative;
+    //   width: 100%;
+    //   color: white;
+    // }
+  }
+}
 
-      .personalized,
-      .gallary,
-      .mood_tracker {
-        // border: 1px dashed aliceblue;
-        margin-top: 60px;
-        color: #ffff;
-      }
-      .persTittle {
-        display: flex;
-        align-items: center;
-        // margin-bottom: 10px;
-      }
-      .text_features {
-        // display: block;
-      }
+.content6 {
+  // height: 200px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  // background: linear-gradient(#e0a12e, var(--background-end-rgb));
+  display: flex;
+  justify-content: center;
+  .text_container {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    .text6 {
+      font-size: 20px;
+      color: #f2ba53;
+    }
+    .text7 {
+      font-size: 40px;
+      font-weight: 600;
+      color: white;
     }
   }
-
-  .content3 {
-    // border: 2px solid red;
-    padding-top: 100px;
-    background: linear-gradient(#e0a12e, var(--background-end-rgb));
-    display: flex;
-    justify-content: center;
-
-    .iphone_plan {
-      position: relative;
-      text-align: end;
-    }
-
-    .iphone {
-      z-index: 1;
-    }
-    .line {
-      z-index: 2;
-      margin-bottom: 297px;
-      margin-left: -85px;
-    }
-    .text_block {
-      margin-top: 56px;
-      .tittle {
-        color: white;
-        font-weight: 700;
-      }
-    }
-  }
-
-  .content4 {
-    display: block !important;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    height: 570px;
-    background-image: url("../../public/images/icon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-
-    .sliderContainer {
-      display: flex;
-      justify-content: space-around;
-    }
-    .sunImg {
-      display: flex;
-      justify-content: end;
-      align-items: start;
-      height: 200px;
-      margin-top: -200px;
-    }
-  }
-  .content5 {
-    height: 500px;
+  .btn_row {
     // border: 2px solid red;
     display: flex;
     justify-content: center;
-    .tittle5 {
-      text-align: center;
-      // border: 2px solid black;
+    .btn_download_now {
+      background-color: black;
       color: white;
-      // font-weight: 800;
-      .sub_tittle5 {
-        color: black;
-        font-size: 20px;
-      }
+      transform: scale(1);
+      transition: transform 0.7s ease;
     }
-    .fq_list {
-      // border: 2px solid red;
-      color: white;
-      .divider {
-        opacity: 20%;
-        height: 2px;
-        background-color: white;
-        width: 100%;
-      }
-      .menu1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-      }
-      .fq_text {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      // .divider1 {
-      //   position: relative;
-      //   width: 100%;
-      //   color: white;
-      // }
-    }
-  }
-
-  .content6 {
-    // height: 200px;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    // background: linear-gradient(#e0a12e, var(--background-end-rgb));
-    display: flex;
-    justify-content: center;
-    .text_container {
-      display: block;
-      text-align: center;
-      margin-bottom: 30px;
-      .text6 {
-        font-size: 20px;
-        color: #f2ba53;
-      }
-      .text7 {
-        font-size: 40px;
-        font-weight: 600;
-        color: white;
-      }
-    }
-    .btn_row {
-      // border: 2px solid red;
-      display: flex;
-      justify-content: center;
-      .btn_download_now {
-        background-color: black;
-        color: white;
-        transform: scale(1);
-        transition: transform 0.7s ease;
-      }
-      :hover {
-        // height: 50px;
-        // width: 200px;
-        transform: scale(1.1);
-        background-color: rgb(49, 48, 48);
-        transition: 0.5s;
-      }
+    :hover {
+      // height: 50px;
+      // width: 200px;
+      transform: scale(1.1);
+      background-color: rgb(49, 48, 48);
+      transition: 0.5s;
     }
   }
 }
