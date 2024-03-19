@@ -1,0 +1,57 @@
+// @keyframes fadeInUp {
+//   from {
+//     opacity: 0;
+//     transform: translateY(20px); /* Начальное смещение вниз */
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0); /* Конечное положение */
+//   }
+// }
+.main {
+  // border: 2px solid red;
+
+  // opacity: 0;
+  // transform: translateY(20px);
+  // transition: opacity 0.5s ease, transform 0.5s ease;
+
+  padding: 0;
+  //   margin: 0;
+  margin-top: 100px;
+  .content1 {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    .atmos {
+      // border: 2px solid green;
+      .tittle {
+        font-weight: 600;
+        color: #ffff;
+      }
+    }
+  }
+  .content2 {
+    .gallary {
+      display: flex;
+      justify-content: center;
+      .gallary_png {
+        width: 100%;
+      }
+    }
+    .all_products {
+      display: flex;
+      justify-content: center;
+      .btn_all_products {
+        margin-top: 20px;
+        border-color: white;
+        color: #ffff;
+        border-radius: 10px;
+        text-transform: lowercase;
+      }
+    }
+  }
+  // &.appear {
+  //   opacity: 1;
+  //   transform: translateY(0); /* Конечное положение */
+  // }
+}

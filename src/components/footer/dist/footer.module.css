@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .forcaste_icons {
+  margin-bottom: -30px;
+  background-image: url("../../../public/images/forcaste_icons.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+}
+.wrapper .footer {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../../public/images/bg_wave2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.wrapper .footer .content1 {
+  margin-top: 100px;
+}
+.wrapper .footer .content1 .icon_wrapper .icon_container {
+  display: flex;
+  height: 20px;
+  align-items: center;
+}
+.wrapper .footer .content1 .icon_wrapper .brand_icon {
+  margin-right: 10px;
+}
+.wrapper .footer .content1 .text_container1 .text_wrapper {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+.wrapper .footer .content1 .text_container1 .text_wrapper .btn_email {
+  transform: scale(1);
+  transition: transform 0.7s ease;
+  text-transform: none;
+  color: white;
+  background-color: var(--foreground-rgb);
+}
+.wrapper .footer .content1 .text_container1 .text_wrapper .btn_email:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.wrapper .footer .content1 .text_container1 .text_wrapper:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.wrapper .footer .content1 .text_container1 .text1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  transform: none;
+}
+.wrapper .footer .content1 .text_container1 .text2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--footer-text-rgb);
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+.wrapper .footer .content1 .text_container1 .text2:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  color: white;
+}
+.wrapper .footer .content1 .text_container1 .text3 {
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--footer-text-rgb);
+}
+.wrapper .footer .content1 .getnow_row {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+.wrapper .footer .content1 .getnow_row .juniper {
+  transform: scale(1);
+  transition: 0.7s ease;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+}
+.wrapper .footer .content1 .getnow_row .juniper:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  text-shadow: 15px 15px var(--foreground-rgb);
+  cursor: pointer;
+}
+.wrapper .footer .content1 .getnow_row .btn_getnow {
+  transform: scale(1);
+  transition: transform 0.7s ease;
+  text-transform: none;
+  color: white;
+  background-color: var(--foreground-rgb);
+}

@@ -1,0 +1,15 @@
+.header {
+  border-radius: 5px;
+  display: flex;
+  align-items: baseline;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}

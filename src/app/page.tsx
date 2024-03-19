@@ -17,7 +17,6 @@ export default function Home() {
     <>
       {/* <Grid container className={styles.main} xs={12} border="1px solid blue"> */}
       <Grid item container className={styles.content1} xs={12}>
-        
         <Grid item container xs className={styles.hero}>
           <Typography className={styles.text1}>Your Live</Typography>
           <Typography className={styles.text2}>Forecaster</Typography>
@@ -81,7 +80,7 @@ export default function Home() {
           <Grid item xs={3} className={styles.mood_tracker}>
             <div className={styles.persTittle}>
               <div className={styles.persIcon} />
-              <img src={gallary.src} Ё className={styles.gallary_img} />
+              <img src={gallary.src} className={styles.gallary_img} />
 
               <Typography>MoodTracker</Typography>
             </div>

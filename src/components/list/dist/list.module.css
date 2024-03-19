@@ -1,0 +1,9 @@
+.one:hover {
+  color: white;
+  transition: 0.5s;
+}
+.one:hover .one_check {
+  color: white;
+  transition: 0.5s;
+  width: 40px;
+}

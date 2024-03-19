@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 100px;
+}
+.wrapper .slider {
+  color: white;
+  width: 500px;
+  height: 200px;
+  border-radius: 7px;
+  background-color: #403b45;
+}
+.wrapper .slider .slide1 {
+  padding: 20px;
+}
+.wrapper .slider .text {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.wrapper .slider .customer {
+  display: flex;
+  align-items: center;
+}
+.wrapper .slider .customer .customer_name {
+  font-size: 20px;
+  margin-left: 10px;
+}
