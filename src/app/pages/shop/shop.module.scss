@@ -1,22 +1,5 @@
-// @keyframes fadeInUp {
-//   from {
-//     opacity: 0;
-//     transform: translateY(20px); /* Начальное смещение вниз */
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0); /* Конечное положение */
-//   }
-// }
 .main {
-  // border: 2px solid red;
-
-  // opacity: 0;
-  // transform: translateY(20px);
-  // transition: opacity 0.5s ease, transform 0.5s ease;
-
   padding: 0;
-  //   margin: 0;
   margin-top: 100px;
   .content1 {
     margin-bottom: 100px;
@@ -50,8 +33,41 @@
       }
     }
   }
-  // &.appear {
-  //   opacity: 1;
-  //   transform: translateY(0); /* Конечное положение */
-  // }
+
+  .content3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .tittle1,
+    .tittle2 {
+      text-align: center;
+    }
+    .tittle1 {
+      color: #ffff;
+      font-weight: 700;
+    }
+    .tittle2 {
+      margin-top: 20px;
+      color: #000000aa;
+      font-weight: 700;
+    }
+    .switch_box {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      .yearly, .monthly{
+        color: #ffff;
+      }
+      .monthly{
+
+      }
+      
+    }
+    .plan_cards{
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
 }

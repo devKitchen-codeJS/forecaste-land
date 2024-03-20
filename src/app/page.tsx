@@ -1,21 +1,23 @@
+"use client";
 import styles from "./page.module.scss";
 import { Box, Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+
+import MyDivider from "@/components/customDivider";
+import CustomList from "@/components/list";
+import CustomSlider from "@/components/slider/slider";
+
+import bg1 from "../../public/images/bg.png";
+import bg2 from "../../public/images/icon.png";
 import phones from "../../public/images/Mockups.png";
 import gallary from "../../public/images/gallary.png";
 import iphone_plan from "../../public/images/phone_mockup.png";
 import line2 from "../../public/images/Line 2.png";
 import sun from "../../public/images/sun.png";
-import CustomList from "@/components/list";
-import CustomSlider from "@/components/slider/slider";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import MyDivider from "@/components/customDivider";
-import bg1 from "../../public/images/bg.png";
-import bg2 from "../../public/images/icon.png";
 export default function Home() {
   return (
     <>
-      {/* <Grid container className={styles.main} xs={12} border="1px solid blue"> */}
       <Grid item container className={styles.content1} xs={12}>
         <Grid item container xs className={styles.hero}>
           <Typography className={styles.text1}>Your Live</Typography>
@@ -123,6 +125,7 @@ export default function Home() {
           <CustomSlider />
         </Grid>
       </Grid>
+
       <Grid item container className={styles.content5} xs={12}>
         <Grid item className={styles.tittle5} xs={10}>
           <Typography variant='h3' fontWeight={700}>
@@ -167,6 +170,7 @@ export default function Home() {
           <MyDivider />
         </Grid>
       </Grid>
+
       <Grid item container className={styles.content6}>
         <Grid className={styles.text_container} item xs={5}>
           <Typography className={styles.text6}>
@@ -183,7 +187,6 @@ export default function Home() {
           </Button>
         </Grid>
       </Grid>
-      {/* </Grid> */}
     </>
   );
 }

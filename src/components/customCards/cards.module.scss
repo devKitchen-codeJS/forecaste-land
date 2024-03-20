@@ -1,0 +1,20 @@
+.card {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 250px;
+  height: 400px;
+  background-color: var(--foreground-rgb);
+  border-radius: 15px;
+  box-shadow: inset 0 -3em 3em rgba(11, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(57, 56, 56, 0.3);
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card:after {
+  background-color: red;
+  // transform-style: ;
+  transition: 0.4s;
+}

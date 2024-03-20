@@ -1,16 +1,20 @@
-// "use client"
-import { Box, Button, Grid, Typography } from "@mui/material";
+"use client";
+import { Box, Button, Grid, Switch, Typography, useTheme } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import styles from "./shop.module.scss";
 import productImg from "../../../../public/images/Product.png";
 import gallary1 from "../../../../public/images/Content2.png";
-
+import Card from "@/components/customCards";
+// import theme from "@/app/theme";
+// import { useTheme } from "@emotion/react";
 
 const Shop = () => {
-
+  // const theme1 = theme;
+  const theme2 = useTheme();
+  console.log("theme", theme2);
   return (
     <Box>
-      <Grid item  xs={12} container className={styles.main}>
+      <Grid item xs={12} container className={styles.main}>
         <Grid item container className={styles.content1}>
           <Grid item xs={6} className={styles.product}>
             <img src={productImg.src} />
@@ -44,21 +48,28 @@ const Shop = () => {
         </Grid>
 
         <Grid item container className={styles.content3}>
-          <Grid item className={styles.text}>
-            <Typography variant='h6' className={styles.text2}>
-              We offer three plans to suit your needs and budget
+          <Grid item className={styles.text} xs={8}>
+            <Typography variant='h2' className={styles.tittle1}>
+              We offer {<span style={{ color: "black" }}>three plans</span>} to
+              suit your needs and budget
             </Typography>
-            <Typography>
-              {" "}
+
+            <Typography variant='h5' className={styles.tittle2}>
               You can switch or cancel your plan at any time
             </Typography>
+
             <Box className={styles.switch_box}>
-              <Typography>YEARLY BILLING</Typography>
-              <Button variant='contained'>SWITCH</Button>
-              <Typography>MONTHLY BILLING</Typography>
+              <Typography className={styles.yearly}>YEARLY BILLING</Typography>
+              <Switch defaultChecked color="default" />
+              <Typography className={styles.monthly}>MONTHLY BILLING</Typography>
             </Box>
           </Grid>
-          <Grid item className={styles.plan_cards}></Grid>
+          <Grid item className={styles.plan_cards} xs={12}>
+            <Card/>
+            <Card/>
+            <Card/>
+
+          </Grid>
         </Grid>
       </Grid>
     </Box>
