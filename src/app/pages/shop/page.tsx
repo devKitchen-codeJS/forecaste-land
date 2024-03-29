@@ -5,13 +5,12 @@ import styles from "./shop.module.scss";
 import productImg from "../../../../public/images/Product.png";
 import gallary1 from "../../../../public/images/Content2.png";
 import Card from "@/components/customCards";
+import SubscribeBtn from "@/components/subscribeButton";
 // import theme from "@/app/theme";
 // import { useTheme } from "@emotion/react";
 
 const Shop = () => {
-  // const theme1 = theme;
-  const theme2 = useTheme();
-  console.log("theme", theme2);
+
   return (
     <Box>
       <Grid item xs={12} container className={styles.main}>
@@ -27,12 +26,15 @@ const Shop = () => {
               A weather app that lets you explore the atmosphere and learn more
               about the weather phenomena
             </Typography>
-            <Button variant='contained' className={styles.btn_buy_now}>
-              Buy Now
-            </Button>
-            <Button variant='contained' className={styles.btn_add_to_card}>
-              Add to Card
-            </Button>
+
+            <Box className={styles.btn_box}>
+              <Button variant='contained' className={styles.btn_buy_now}>
+                Buy Now
+              </Button>
+              <Button variant='outlined' className={styles.btn_add_to_card}>
+                Add to Card
+              </Button>
+            </Box>
           </Grid>
         </Grid>
 
@@ -41,9 +43,7 @@ const Shop = () => {
             <img src={gallary1.src} className={styles.gallary_png} />
           </Grid>
           <Grid xs={12} item className={styles.all_products}>
-            <Button variant='outlined' className={styles.btn_all_products}>
-              show all products
-            </Button>
+            <SubscribeBtn btn_name='show all products' />
           </Grid>
         </Grid>
 
@@ -60,15 +60,16 @@ const Shop = () => {
 
             <Box className={styles.switch_box}>
               <Typography className={styles.yearly}>YEARLY BILLING</Typography>
-              <Switch defaultChecked color="default" />
-              <Typography className={styles.monthly}>MONTHLY BILLING</Typography>
+              <Switch defaultChecked color='default' />
+              <Typography className={styles.monthly}>
+                MONTHLY BILLING
+              </Typography>
             </Box>
           </Grid>
           <Grid item className={styles.plan_cards} xs={12}>
-            <Card/>
-            <Card/>
-            <Card/>
-
+            <Card />
+            <Card />
+            <Card />
           </Grid>
         </Grid>
       </Grid>

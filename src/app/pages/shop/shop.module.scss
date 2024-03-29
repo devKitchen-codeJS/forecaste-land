@@ -5,11 +5,32 @@
     margin-bottom: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .atmos {
       // border: 2px solid green;
       .tittle {
         font-weight: 600;
         color: #ffff;
+      }
+      .btn_box {
+        margin-top: 20px;
+        // border: 2px solid red;
+        display: flex;
+        // justify-content: space-between;
+        .btn_buy_now{
+          background-color:#F5B747;
+          width: 150px;
+        }
+        .btn_add_to_card{
+          margin-left: 20px;
+          border-color: #F5B747;
+          color: white;
+          text-decoration: none;
+          text-transform: none;
+          width: 150px;
+
+        }
+
       }
     }
   }
@@ -24,13 +45,13 @@
     .all_products {
       display: flex;
       justify-content: center;
-      .btn_all_products {
-        margin-top: 20px;
-        border-color: white;
-        color: #ffff;
-        border-radius: 10px;
-        text-transform: lowercase;
-      }
+      // .btn_all_products {
+      //   margin-top: 20px;
+      //   border-color: white;
+      //   color: #ffff;
+      //   border-radius: 10px;
+      //   text-transform: lowercase;
+      // }
     }
   }
 
@@ -56,18 +77,17 @@
       display: flex;
       justify-content: center;
       align-items: baseline;
-      .yearly, .monthly{
+      .yearly,
+      .monthly {
         color: #ffff;
       }
-      .monthly{
-
+      .monthly {
       }
-      
     }
-    .plan_cards{
+    .plan_cards {
       display: flex;
       justify-content: center;
+      margin-bottom: 50px;
     }
-    
   }
 }
