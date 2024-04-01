@@ -5,7 +5,6 @@ import twitter from "../../../public/images/twitter.png";
 import facebook from "../../../public/images/facebook.png";
 import instagram from "../../../public/images/Instagram.png";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import theme from "@/app/theme";
 const Footer = () => {
   return (
     <Grid container xs={12} className={styles.wrapper}>

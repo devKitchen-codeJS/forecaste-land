@@ -25,17 +25,17 @@ interface SliderRef {
   slickPrev(): void;
 }
 
-function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}>
-      <KeyboardArrowLeftIcon />
-    </div>
-  );
-}
+// function SamplePrevArrow(props: any) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, display: "block", background: "green" }}
+//       onClick={onClick}>
+//       <KeyboardArrowLeftIcon />
+//     </div>
+//   );
+// }
 
 const CustomSlider = () => {
   const slider = useRef<SliderRef | null>(null);
@@ -59,9 +59,9 @@ const CustomSlider = () => {
       <Slider {...settings} className={styles.slider}>
         <div className={styles.slide1}>
           <Typography className={styles.text}>
-            Juniper is a great app for checking the weather. It's easy to use
+            Juniper is a great app for checking the weather. It&apos;s easy to use
             and has a beautiful interface. I love how it shows me the cloud
-            patterns and predicts the weather for the next few days. It's like
+            patterns and predicts the weather for the next few days. It&apos;s like
             having a personal meteorologist in my pocket.
           </Typography>
           <Box className={styles.customer}>
@@ -71,9 +71,9 @@ const CustomSlider = () => {
         </div>
         <div className={styles.slide1}>
           <Typography className={styles.text}>
-            Juniper is a great app for checking the weather. It's easy to use
+            Juniper is a great app for checking the weather. It&apos;s easy to use
             and has a beautiful interface. I love how it shows me the cloud
-            patterns and predicts the weather for the next few days. It's like
+            patterns and predicts the weather for the next few days. It&apos;s like
             having a personal meteorologist in my pocket.
           </Typography>
           <Box className={styles.customer}>
@@ -83,9 +83,9 @@ const CustomSlider = () => {
         </div>
         <div className={styles.slide1}>
           <Typography className={styles.text}>
-            Juniper is a great app for checking the weather. It's easy to use
+            Juniper is a great app for checking the weather. It&apos;s easy to use
             and has a beautiful interface. I love how it shows me the cloud
-            patterns and predicts the weather for the next few days. It's like
+            patterns and predicts the weather for the next few days. It&apos;s like
             having a personal meteorologist in my pocket.
           </Typography>
           <Box className={styles.customer}>

@@ -7,8 +7,6 @@ import gallary1 from "@/../public/images/Content2.png";
 import Card from "@/components/customCards";
 import SubscribeBtn from "@/components/subscribeButton";
 
-// forecaste
-
 const Shop = () => {
   return (
     <Box>
