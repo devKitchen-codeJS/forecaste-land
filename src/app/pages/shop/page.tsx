@@ -2,8 +2,8 @@
 import { Box, Button, Grid, Switch, Typography, useTheme } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import styles from "./shop.module.scss";
-import productImg from "../../../../public/images/Product.png";
-import gallary1 from "../../../../public/images/Content2.png";
+import productImg from "@/../public/images/Product.png";
+import gallary1 from "@/../public/images/Content2.png";
 import Card from "@/components/customCards";
 import SubscribeBtn from "@/components/subscribeButton";
 // import theme from "@/app/theme";
@@ -15,23 +15,23 @@ const Shop = () => {
     <Box>
       <Grid item xs={12} container className={styles.main}>
         <Grid item container className={styles.content1}>
-          <Grid item xs={6} className={styles.product}>
-            <img src={productImg.src} />
+          <Grid item  xl={6} lg={7} md={12} xs={12} className={styles.product}>
+            <img src={productImg.src} className={styles.product_img} />
           </Grid>
-          <Grid item xs={4} className={styles.atmos}>
-            <Typography variant='h1' className={styles.tittle}>
+          <Grid item  xl={4} lg={4} md={12} xs={12} className={styles.atmos}>
+            <Typography variant='h1' className={styles.atmos_tittle}>
               Atmos
             </Typography>
-            <Typography variant='h5' className={styles.text1}>
+            <Typography variant='h5' className={styles.atmos_text}>
               A weather app that lets you explore the atmosphere and learn more
               about the weather phenomena
             </Typography>
 
             <Box className={styles.btn_box}>
-              <Button variant='contained' className={styles.btn_buy_now}>
+              <Button variant='contained' disableRipple className={styles.btn_box_buy_now}>
                 Buy Now
               </Button>
-              <Button variant='outlined' className={styles.btn_add_to_card}>
+              <Button variant='outlined'  className={styles.btn_box_add_to_card}>
                 Add to Card
               </Button>
             </Box>

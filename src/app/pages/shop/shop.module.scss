@@ -6,22 +6,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .product{
+      &_img{
+        width: 100%;
+      }
+    }
     .atmos {
-      // border: 2px solid green;
-      .tittle {
+      width: 100%;
+      &_tittle {
         font-weight: 600;
         color: #ffff;
       }
-      .btn_box {
+       .btn_box {
         margin-top: 20px;
-        // border: 2px solid red;
         display: flex;
-        // justify-content: space-between;
-        .btn_buy_now{
+        &_buy_now{
           background-color:#F5B747;
           width: 150px;
         }
-        .btn_add_to_card{
+        &_add_to_card{
           margin-left: 20px;
           border-color: #F5B747;
           color: white;
@@ -45,13 +48,6 @@
     .all_products {
       display: flex;
       justify-content: center;
-      // .btn_all_products {
-      //   margin-top: 20px;
-      //   border-color: white;
-      //   color: #ffff;
-      //   border-radius: 10px;
-      //   text-transform: lowercase;
-      // }
     }
   }
 

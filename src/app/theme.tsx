@@ -25,10 +25,10 @@ const __check_color = "#dddddd";
 
 // export const themeOptions: R
 
-const theme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
-      main: '#D2982D',
+      main: "#D2982D",
       dark: "#ba000d",
     },
     secondary: {
@@ -40,10 +40,17 @@ const theme = createTheme({
     info: {
       main: __color_neutral,
     },
-    success:{
-      main:'#403B45'
-    }
+    success: {
+      main: "#403B45",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
   },
 });
-
-export default theme;

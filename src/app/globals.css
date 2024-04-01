@@ -55,6 +55,7 @@ body {
 }
 .main {
   /* background:  var(--background-end-rgb); */
+  /* border: 2px solid black; */
   padding-left: 200px;
   padding-right: 200px;
   
@@ -64,6 +65,8 @@ a {
   text-decoration: none;
 }
 body {
+  /* border: 2px solid black; */
+
   /* background:  var(--background-end-rgb); */
 }
 /* 

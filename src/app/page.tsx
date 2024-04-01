@@ -183,7 +183,7 @@ export default function Home() {
         </Grid>
         <Grid className={styles.btn_row} xs={12}>
           <Button variant='contained' className={styles.btn_download_now}>
-            DOWNLOAD NOW
+            START NOW
           </Button>
         </Grid>
       </Grid>

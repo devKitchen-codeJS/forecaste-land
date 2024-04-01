@@ -1,15 +1,26 @@
-
+.wrapper {
+  padding: 0;
+}
 .header {
-  border-radius: 5px;
   display: flex;
   align-items: baseline;
+  padding: 0px 20px 0px 20px;
 }
 .logo {
   display: flex;
-  justify-content: center;
+  color: white;
+  padding-left: 20px;
 }
 .navigation {
   display: flex;
   justify-content: flex-end;
-}
+  &_context {
+    color: white;
 
+    .tab {
+      color: white;
+      text-decoration: none;
+      text-transform: none;
+    }
+  }
+}

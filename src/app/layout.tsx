@@ -1,12 +1,10 @@
 "use client";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-// import { ThemeProvider } from "@emotion/react";
-import theme from "./theme";
-import { Box, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import Footer from "@/components/footer";
+import { theme } from "./theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <body className={inter.className} suppressHydrationWarning={true}>
           <Header />
           <Box className='main'>{children}</Box>
