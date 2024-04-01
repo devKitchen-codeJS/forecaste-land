@@ -8,11 +8,6 @@ import { theme } from "./theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Forecaste App",
-//   description: "MVP",
-// };
-
 export default function RootLayout({
   children,
 }: {
@@ -25,7 +20,6 @@ export default function RootLayout({
         <body className={inter.className} suppressHydrationWarning={true}>
           <Header />
           <Box className='main'>{children}</Box>
-
           <Footer />
         </body>
       </ThemeProvider>

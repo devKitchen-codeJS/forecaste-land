@@ -15,9 +15,11 @@ import gallary from "../../public/images/gallary.png";
 import iphone_plan from "../../public/images/phone_mockup.png";
 import line2 from "../../public/images/Line 2.png";
 import sun from "../../public/images/sun.png";
+
 export default function Home() {
   return (
     <>
+      <title>Forecaste App</title>
       <Grid item container className={styles.content1} xs={12}>
         <Grid item container xs className={styles.hero}>
           <Typography className={styles.text1}>Your Live</Typography>
@@ -45,7 +47,6 @@ export default function Home() {
         </Grid>
 
         <Grid item xs='auto' className={styles.mockups}>
-          {/* <div className={styles.phones} /> */}
           <img src={phones.src} />
         </Grid>
       </Grid>
@@ -145,7 +146,6 @@ export default function Home() {
             </Typography>
             <KeyboardArrowRightIcon />
           </div>
-          {/* <div className={styles.divider} /> */}
           <MyDivider />
           <div className={styles.menu1}>
             <Typography variant='h5' className={styles.fq_text}>
