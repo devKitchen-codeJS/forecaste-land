@@ -18,7 +18,7 @@ import sun from "../../public/images/sun.png";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.base}>
       <title>Forecaste App</title>
       <Grid item container className={styles.content1} xs={12}>
         <Grid item container xs className={styles.hero}>
@@ -51,69 +51,71 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <Grid item container className={styles.content2} xs={12}>
-        <img src={bg1.src} className={styles.bg_img} />
-        <Grid item container xs={12} className={styles.features}>
-          <Grid item xs={3} className={styles.personalized}>
-            <Box className={styles.persTittle}>
-              <Box className={styles.persIcon} />
-              <img src={gallary.src} className={styles.gallary_img} />
-              <Typography>Personalized</Typography>
-            </Box>
-            <Typography className={styles.text_features}>
-              A personalized weather report that shows the best time and place
-              for couples to enjoy outdoor activities based on their preferences
-              and location.
-            </Typography>
+      <div className={styles.gradient}>
+        <Grid item container className={styles.content2} xs={12}>
+          <img src={bg1.src} className={styles.bg_img} />
+          <Grid item container xs={12} className={styles.features}>
+            <Grid item xs={3} className={styles.personalized}>
+              <Box className={styles.persTittle}>
+                <Box className={styles.persIcon} />
+                <img src={gallary.src} className={styles.gallary_img} />
+                <Typography>Personalized</Typography>
+              </Box>
+              <Typography className={styles.text_features}>
+                A personalized weather report that shows the best time and place
+                for couples to enjoy outdoor activities based on their
+                preferences and location.
+              </Typography>
+            </Grid>
+
+            <Grid item xs={3} className={styles.gallary}>
+              <div className={styles.persTittle}>
+                <div className={styles.persIcon} />
+                <img src={gallary.src} className={styles.gallary_img} />
+                <Typography>Gallary</Typography>
+              </div>
+              <Typography className={styles.text_features}>
+                A personalized weather report that shows the best time and place
+                for couples to enjoy outdoor activities based on their
+                preferences and location.
+              </Typography>
+            </Grid>
+
+            <Grid item xs={3} className={styles.mood_tracker}>
+              <div className={styles.persTittle}>
+                <div className={styles.persIcon} />
+                <img src={gallary.src} className={styles.gallary_img} />
+
+                <Typography>MoodTracker</Typography>
+              </div>
+              <Typography className={styles.text_features}>
+                A personalized weather report that shows the best time and place
+                for couples to enjoy outdoor activities based on their
+                preferences and location.
+              </Typography>
+            </Grid>
           </Grid>
+          {/* <div className={styles.gradient_margin}></div> */}
+        </Grid>
 
-          <Grid item xs={3} className={styles.gallary}>
-            <div className={styles.persTittle}>
-              <div className={styles.persIcon} />
-              <img src={gallary.src} className={styles.gallary_img} />
-              <Typography>Gallary</Typography>
-            </div>
-            <Typography className={styles.text_features}>
-              A personalized weather report that shows the best time and place
-              for couples to enjoy outdoor activities based on their preferences
-              and location.
-            </Typography>
+        <Grid item container className={styles.content3}>
+          <Grid item className={styles.iphone_plan} xs={5}>
+            <img src={iphone_plan.src} className={styles.iphone} />
+            <img src={line2.src} className={styles.line} />
           </Grid>
-
-          <Grid item xs={3} className={styles.mood_tracker}>
-            <div className={styles.persTittle}>
-              <div className={styles.persIcon} />
-              <img src={gallary.src} className={styles.gallary_img} />
-
-              <Typography>MoodTracker</Typography>
-            </div>
-            <Typography className={styles.text_features}>
-              A personalized weather report that shows the best time and place
-              for couples to enjoy outdoor activities based on their preferences
-              and location.
+          <Grid item className={styles.text_block} xs={5}>
+            <Typography variant='h2' className={styles.tittle}>
+              Plan Your Outdoor
             </Typography>
+            <Typography variant='h2' className={styles.tittle}>
+              Activities with Ease
+            </Typography>
+            <Typography variant='h4'>Get notified before rain stops</Typography>
+            <Typography variant='h4'> Plan your outdoor activities</Typography>
+            <CustomList />
           </Grid>
         </Grid>
-        {/* </Box> */}
-      </Grid>
-
-      <Grid item container className={styles.content3}>
-        <Grid item className={styles.iphone_plan} xs={5}>
-          <img src={iphone_plan.src} className={styles.iphone} />
-          <img src={line2.src} className={styles.line} />
-        </Grid>
-        <Grid item className={styles.text_block} xs={5}>
-          <Typography variant='h2' className={styles.tittle}>
-            Plan Your Outdoor
-          </Typography>
-          <Typography variant='h2' className={styles.tittle}>
-            Activities with Ease
-          </Typography>
-          <Typography variant='h4'>Get notified before rain stops</Typography>
-          <Typography variant='h4'> Plan your outdoor activities</Typography>
-          <CustomList />
-        </Grid>
-      </Grid>
+      </div>
 
       <Grid item container className={styles.content4} xs={12}>
         <Box className={styles.bg_box}>
@@ -187,6 +189,6 @@ export default function Home() {
           </Button>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }

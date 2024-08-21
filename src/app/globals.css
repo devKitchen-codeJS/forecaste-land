@@ -55,8 +55,8 @@ body {
 }
 .main {
   background: var(--background-end-rgb);
-  padding-left: 200px;
-  padding-right: 200px;
+  /* padding-left: 200px; */
+  /* padding-right: 200px; */
 }
 a {
   color: inherit;
