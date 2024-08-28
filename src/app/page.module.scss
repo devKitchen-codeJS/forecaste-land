@@ -123,10 +123,11 @@
 .content4 {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+
   position: relative;
 
   .bg_box {
+    margin-top: 200px;
     display: flex;
     width: 100%;
     z-index: 1;
@@ -137,7 +138,7 @@
     .sun_img {
       // border: 1px solid red;
       position: absolute;
-      top: -140px;
+      top: 60px;
       right: 0;
       z-index: 2;
       max-height: 300px;
