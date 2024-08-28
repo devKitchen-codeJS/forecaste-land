@@ -3,7 +3,6 @@ import styles from "./page.module.scss";
 import { Box, Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
 import MyDivider from "@/components/customDivider";
 import CustomList from "@/components/list";
 import CustomSlider from "@/components/slider/slider";
