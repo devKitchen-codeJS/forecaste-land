@@ -52,15 +52,7 @@ const Header = () => {
                 {/* <Tab label='Info' value='4' /> */}
               </StyledTabList>
             </Box>
-            {/* <TabPanel value='1' onClick={() => router.push("/")}>
-                Home
-              </TabPanel>
-              <TabPanel value='2' onClick={() => router.push("/pages/shop")}>
-                Shop
-              </TabPanel>
-              <TabPanel value='3' onClick={() => router.push("/")}>
-                TOS
-              </TabPanel> */}
+           
           </TabContext>
         </Grid>
       </Grid>
