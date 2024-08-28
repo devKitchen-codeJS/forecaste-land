@@ -117,10 +117,10 @@ export default function Home() {
       </div>
 
       <Grid item container className={styles.content4} xs={12}>
-        <Box className={styles.bg_box}>
+        <div className={styles.bg_box}>
           <img src={bg2.src} className={styles.bg2_img} />
           <img src={sun.src} className={styles.sun_img} />
-        </Box>
+        </div>
 
         <Grid item className={styles.sliderContainer}>
           <CustomSlider />
